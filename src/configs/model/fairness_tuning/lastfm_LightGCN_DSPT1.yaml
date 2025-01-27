@@ -1,0 +1,18 @@
+embedding_size: 64
+reg_weight: 0.1
+weight_size: [64]
+
+# lambda_0: [1e-3, 5e-3, 1e-2]
+# alpha: [1e-3, 5e-3, 1e-2]
+# beta: [1e-3, 5e-3, 1e-2]
+
+lambda_0: [0.01, 0.05, 0.1]
+alpha: [0.01, 0.05, 0.1]
+beta: [0.01, 0.05, 0.1]
+
+
+# to prevent increasing model capcity than villina base model, we restrict the inner sizes equaling to the embedding size
+prompt_size: 64
+share_size: 64
+
+hyper_parameters: ["lambda_0", "alpha", "beta"]

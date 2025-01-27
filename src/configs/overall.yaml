@@ -1,0 +1,68 @@
+# general
+gpu_id: 0 
+use_gpu: True
+seed: 42
+
+# multi-modal raw features
+data_path: '../data/'
+inter_splitting_label: 'x_label'
+filter_out_cod_start_users: True
+
+checkpoint_dir: 'saved'
+save_recommended_topk: False
+recommend_topk: 'recommend_topk/'
+
+embedding_size: 64
+weight_decay: 0.0
+req_training: True
+
+# training settings
+epochs: 1000
+stopping_step: 20
+train_batch_size: 4096
+learner: adam
+learning_rate: 0.001
+learning_rate_scheduler: [1.0, 50]
+eval_step: 1
+
+training_neg_sample_num: 1
+use_neg_sampling: True
+use_full_sampling: False
+NEG_PREFIX: neg__
+
+USER_ID_FIELD: user_id:token
+ITEM_ID_FIELD: item_id:token
+TIME_FIELD: timestamp:float
+field_separator: "\t"
+
+
+# evaluation settings
+ranking_metrics: ["Recall", "NDCG"]
+topk: [10, 20]
+fairness_metrics: ["DP", "EOpp"]
+# fairness_metrics: ["DP_EOpp"]
+fairness_topk: [10, 20]
+valid_metric: Recall@10
+eval_batch_size: 4096
+
+
+
+end2end: False
+
+
+
+
+# 
+model_path: '../models/'
+
+# discriminator (attacker) parameters
+disc_batch_size: 128
+neg_slope: 0.2
+attacker_layers: 2
+lr_attack: 0.001
+l2_attack: 1e-4
+valid_disc_metric: auc
+attacker_dropout: 0.2
+disc_epoch: 500
+
+fairness_tuning_epochs: 100

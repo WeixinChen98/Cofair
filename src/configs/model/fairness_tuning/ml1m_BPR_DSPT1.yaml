@@ -1,0 +1,30 @@
+embedding_size: 64
+reg_weight: 0.1
+
+# default parameters: ['lambda_0', 'alpha', 'beta']=(0.01, 0.01, 0.02),
+# lambda_0: [0.005, 0.01, 0.02]
+# alpha: [0.005, 0.01, 0.02]
+# beta: [0.005, 0.01, 0.02]
+
+# tuning lambda_0:
+# lambda_0: [0.001, 0.002, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.04, 0.05]
+# alpha: [0.01]
+# beta: [0.02]
+
+
+# tuning alpha:
+# lambda_0: [0.01]
+# alpha: [0.0, 0.001, 0.002, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.04, 0.05]
+# beta: [0.02]
+
+# tuning beta:
+lambda_0: [0.01]
+alpha: [0.01]
+beta: [0.0, 0.001, 0.002, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.04, 0.05]
+
+
+# to prevent too much increasing model capacity than villina base model, we restrict the inner sizes equaling to the embedding size
+prompt_size: 64
+share_size: 64
+
+hyper_parameters: ["lambda_0", "alpha", "beta"]
