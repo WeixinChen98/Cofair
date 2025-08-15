@@ -2,7 +2,7 @@
 
 # Cofair
 
-This repository includes the implementation for paper *Fairness on the Fly: Controllable Fairness for Recommender Systems without Retraining*.
+This repository includes the implementation for paper *Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation*.
 
 ## Datasets
 The preprocessed Movielens-1M and Lastfm-360K dataset are already provided in the `./data/ml1m` and `./data/lastfm` folders, respectively.
