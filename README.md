@@ -27,4 +27,14 @@ For example, for the MovieLens dataset, we can run the code of the assembly of C
 > nohup python -u main.py --fairness_model DSPT1 --recommendation_model BPR --dataset ml1m  --gpu_id 1 > ../results/ml1m/BPR_Cofair.log 2>&1 &
 ```
 
+## Citation
+If you find our work helpful, please consider citing our paper:
+```bibtex
+@inproceedings{chen2026posttraining,
+  title     = {Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation},
+  author    = {Chen, Weixin and Chen, Li and Zhao, Yuhan},
+  year      = 2026,
+  booktitle = {The 2nd Workshop on Human-Centered Recommender Systems at the ACM Web Conference 2026 (HCRS@WWW'26)}
+}
+```
 
