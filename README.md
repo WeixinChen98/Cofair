@@ -34,7 +34,7 @@ If you find our work helpful, please consider citing our paper:
   title     = {Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation},
   author    = {Chen, Weixin and Chen, Li and Zhao, Yuhan},
   year      = 2026,
-  booktitle = {The 2nd Workshop on Human-Centered Recommender Systems at the ACM Web Conference 2026 (HCRS@WWW'26)}
+  booktitle = {Companion Proceedings of the ACM Web Conference}
 }
 ```
 
