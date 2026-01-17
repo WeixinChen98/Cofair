@@ -28,7 +28,7 @@ For example, for the MovieLens dataset, we can run the code of the assembly of C
 ```
 
 ## Citation
-If you find our work helpful, please consider citing our paper:
+If you find this work helpful, please consider citing our paper:
 ```bibtex
 @inproceedings{chen2026posttraining,
   title     = {Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation},
