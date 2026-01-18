@@ -4,6 +4,16 @@
 
 The official implementation of HCRS@WWW2026 paper "Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation".
 
+If you find this work helpful, please consider citing our paper:
+```bibtex
+@inproceedings{chen2026posttraining,
+  title     = {Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation},
+  author    = {Chen, Weixin and Chen, Li and Zhao, Yuhan},
+  year      = 2026,
+  booktitle = {Companion Proceedings of the ACM Web Conference}
+}
+```
+
 ## Datasets
 The preprocessed Movielens-1M and Lastfm-360K dataset are already provided in the `./data/ml1m` and `./data/lastfm` folders, respectively.
 
@@ -27,14 +37,4 @@ For example, for the MovieLens dataset, we can run the code of the assembly of C
 > nohup python -u main.py --fairness_model DSPT1 --recommendation_model BPR --dataset ml1m  --gpu_id 1 > ../results/ml1m/BPR_Cofair.log 2>&1 &
 ```
 
-## Citation
-If you find this work helpful, please consider citing our paper:
-```bibtex
-@inproceedings{chen2026posttraining,
-  title     = {Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation},
-  author    = {Chen, Weixin and Chen, Li and Zhao, Yuhan},
-  year      = 2026,
-  booktitle = {Companion Proceedings of the ACM Web Conference}
-}
-```
 
